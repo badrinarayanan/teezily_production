@@ -1,0 +1,1 @@
+INSERT INTO public.images (id, image_name, teezily_name, teezily_image_path, created_at, updated_at) VALUES (12, 'image', '98365a7feff51913f4086e2955a3b92ac520d060.jpeg', 'https://tzy.s3-eu-west-1.amazonaws.com/cloud_images/98365a7feff51913f4086e2955a3b92ac520d060.jpeg', '2017-02-26 17:10:13', '2017-02-26 17:10:13');
