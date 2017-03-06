@@ -235,11 +235,14 @@ class AppRepository
         $result = uploadCampaign($token,json_encode($createCampaign));
         Log::info($result);
             // Check if the campaign has been created else push it into the queue again and add 5 minutes
-        if(is_array(json_decode($result,true))){
+        if(isJson($result)){
 
-            Campaigns::where("id","=",$campaignid)->update(["record_status" => "active"]);
+
+
+           Campaigns::where("id","=",$campaignid)->update(["record_status" => "active"]);
 
         }else{
+
 
             dispatch(new createCampaign($campaignid))->delay(Carbon::now()->addMinutes(5));
         }

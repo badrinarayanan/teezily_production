@@ -114,10 +114,10 @@
 											<label class="col-md-2 control-label" for="select-1">Select design for the front side</label>
 											<div class="col-md-10">
 			
-												<select class="form-control" id="select-front-image" name="select_front_image" data-element="element">
+												<select class="form-control select-image" id="select-front-image" name="select_front_image" data-element="element">
 													<option value="">Select Image</option>
                                                     @foreach($images as $image)
-                                                        <option value="{{ $image->teezily_name }}">{{$image->image_name}}</option>
+                                                        <option value="{{ $image->teezily_name }}" data-img-src="images/iPJjvVEE33mg5GYVQa0jy7MXcFA9pCKP9BWH9fo4.jpeg">{{$image->image_name}}</option>
                                                     @endforeach
 
 												</select> 
@@ -128,10 +128,10 @@
 											<label class="col-md-2 control-label" for="select-1">Select Desgin for the back side</label>
 											<div class="col-md-10">
 			
-												<select class="form-control" id="select-back-image" name="select_back_image">
+												<select class="form-control select-image" id="select-back-image" name="select_back_image">
                                                     <option value="">Select Image</option>
                                                     @foreach($images as $image)
-                                                        <option value="{{ $image->teezily_name }}">{{$image->image_name}}</option>
+                                                        <option value="{{ $image->teezily_name }}" data-img-src="images/iPJjvVEE33mg5GYVQa0jy7MXcFA9pCKP9BWH9fo4.jpeg">{{$image->image_name}}</option>
                                                     @endforeach
 												
 												</select> 

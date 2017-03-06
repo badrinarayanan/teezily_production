@@ -15,6 +15,7 @@
                             <th>#</th>
                             <th>Image Name</th>
                             <th>Teezily Name</th>
+                            <th>Image</th>
                             <th>Link</th>
                         </tr>
                         </thead>
@@ -24,6 +25,7 @@
                                 <td>{{ $row->id }}</td>
                                 <td>{{ $row->image_name }}</td>
                                 <td>{{ $row->teezily_name }}</td>
+                                <td><img src="{{ $row->teezily_image_path }}" style="display:inline-block; height:40%"></td>
                                 <td><a href="{{ $row->teezily_image_path }}" target="_blank">Link</a></td>
                             </tr>
                         @endforeach

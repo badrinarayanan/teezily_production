@@ -10,6 +10,8 @@
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- styles -->
     <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/image-picker.css" rel="stylesheet">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -116,5 +118,9 @@
 <script src="assets/js/custom.js"></script>
 <script src="assets/js/tables.js"></script>
 <script src="assets/js/fileupload.js"></script>
+<script src="assets/js/image-picker.min.js"></script>
+<script type="text/javascript">
+    $(".select-image").imagepicker();
+</script>
 </body>
 </html>
